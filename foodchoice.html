@@ -1,2 +1,17 @@
 <body>
+  {{> places}}
 </body>
+
+<template name="places">
+  {{#each topRestaurants}}
+    {{> restaurant}}
+  {{/each}}
+</template>
+
+<template name="restaurant">
+  <div class="restaurant">
+    <span class="name">{{name}}</span>
+    <span class="score">{{score}}</span>
+  </div>
+</template>
+
