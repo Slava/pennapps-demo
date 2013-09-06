@@ -15,6 +15,13 @@ if (Meteor.isClient) {
       Session.set('selectedName', rest.name);
     }
   });
+
+  Template.restaurant.selected = function () {
+    var rest = this;
+    if (rest.name === Session.get('selectedName'))
+      return 'selected';
+    return '';
+  };
 }
 
 if (Meteor.isServer) {
