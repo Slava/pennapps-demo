@@ -9,6 +9,7 @@ if (Meteor.isClient) {
     'dblclick': function () {
       var rest = this;
       Restaurants.update(rest._id, { $inc: { score: 5 } });
+      Meteor.call('sendEmail', rest);
     },
     'click': function () {
       var rest = this;
@@ -25,4 +26,15 @@ if (Meteor.isClient) {
 }
 
 if (Meteor.isServer) {
+  Meteor.methods({
+    sendEmail: function (rest) {
+      var user = Meteor.users.findOne(this.userId).profile.name;
+      Email.send({
+        to: rest.email,
+        subject: user + " loved your restaurant",
+        from: "FriendlyNeighborhood@spiderman.com",
+        text: "<3 from Penn"
+      });
+    }
+  });
 }
