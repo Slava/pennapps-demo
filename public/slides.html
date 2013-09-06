@@ -147,21 +147,17 @@ pre > code {
 <li>Reactivity</li>
 <li>A lot more...</li>
 </ul></section>
-      <section class="slide"><h3>Demo</h3>
+      <section class="slide"><h3>More</h3>
 
 <ul>
-<li>Ractive.js clocks</li>
-<li>snakes.meteor.com</li>
-</ul></section>
-      <section class="slide"><h3>What is "reactivity"?</h3>
+<li><a href="https://www.meteor.com">Meteor.com</a></li>
+<li>Typical Meteor project is <a href="https://github.com/mcrider/azimuth">very little</a> code</li>
+<li><a href="https://github.com/devonbarrett/meteor-ping-pong">Pong in 350 LOC</a></li>
+</ul>
 
-<p>We can really mean two things here:</p>
+<p><img src="/quote.png" alt="Quote from a user" title="" /></p>
 
-<ul>
-<li>Your views are synchronized with your data model</li>
-<li>Your data is synchronized among clients</li>
-</ul></section>
-      <section class="slide"><h3>Install Meteor tool</h3>
+<h3>Install Meteor tool</h3>
 
 <p>Run the following in your shell</p>
 
@@ -171,17 +167,6 @@ pre > code {
 for Windows.</p>
 
 <p>There is no need to have MongoDB or node.js installed.</p></section>
-      <section class="slide"><h3>Meteor tool</h3>
-
-<p>Knows how to:</p>
-
-<ul>
-<li><code>meteor</code> or <code>meteor run</code> - <em>run</em> your Meteor app in dev mode</li>
-<li><code>meteor bundle</code> - <em>create</em> a production bundle</li>
-<li><code>meteor add &lt;package name&gt;</code> - manage uni-<em>packages</em></li>
-<li><code>meteor deploy myapp.meteor.com</code> - <em>deploy</em> your app to meteor.com free hosting!</li>
-<li>And more ...</li>
-</ul></section>
       <section class="slide"><h3>Server-side vs Client-side code</h3>
 
 <p>Meteor will bundle your JS code to run on server, on client or both, depending
@@ -197,6 +182,32 @@ can separate logic:</p>
 }
 </code></pre></section>
       <section class="slide"><h2>Start coding already!</h2></section>
+      <section class="slide"><h3>What is "reactivity"?</h3>
+
+<p>We can really mean two things here:</p>
+
+<ul>
+<li>Your views are synchronized with your data model</li>
+<li>Your data is synchronized among clients</li>
+<li>Full stack reactivity: data is synchronized between server-client-view</li>
+</ul></section>
+      <section class="slide"><h3>Demo time</h3>
+
+<ul>
+<li><a href="http://snakes.meteor.com">Snakes</a></li>
+<li><a href="http://yujiangtham.com/jfleet/">J-Fleet</a></li>
+<li><a href="http://pokedicks.meteor.com">Poke*icks</a> - built in 24 hours</li>
+<li>Games anyone?</li>
+</ul></section>
+      <section class="slide"><h2>Packages rock</h2>
+
+<ul>
+<li>Facebook connect can be added in 1 minute</li>
+<li>Same with Google Accounts, Twitter, Github, etc</li>
+<li>Email sending can be added in 15 secs</li>
+<li>Coffeescript, Less, SCSS compilers can be added as packages</li>
+<li>A lot more, check out <code>meteor list</code></li>
+</ul></section>
       <section class="slide"><h3>Same APIs on Client and Server</h3>
 
 <p>Example, http call:</p>
@@ -263,11 +274,14 @@ information. Data is synchronized to in-memory cache, Minimongo collection.</p><
 <ul>
 <li>Server-side code runs in node.js</li>
 <li>MongoDB as a persistent storage</li>
-<li>Declarative handlebars-like templates for your views</li>
+<li><p>Declarative handlebars-like templates for your views</p></li>
+<li><p>Components can be changed, community wrote drivers for RethinkDB, MySQL, jade
+templates, angular, other things</p></li>
 </ul></section>
       <section class="slide"><h3>There is more</h3>
 
-<p>There is a lot more cool stuff out there!</p></section>
+<p>There is a lot more cool stuff out there! I just don't have time to explain
+everything, you got to believe me.</p></section>
       <section class="slide"><h3>Atmosphere packages</h3>
 
 <p>There more than 300 community packages built for Meteor. Visit it at</p>
@@ -285,15 +299,13 @@ Greif</li>
 <li><a href="https://www.eventedmind.com/posts">EventedMind.com</a> - screencasts going in depth by Chris Mather</li>
 <li><a href="http://www.meteorpedia.com/read/Main_Page">Meteorpedia</a> - community wiki</li>
 </ul></section>
-      <section class="slide"><h3>Get involved</h3>
+      <section class="slide"><h3>Ask for help!</h3>
 
 <ul>
-<li>Use Meteor and build awesome apps</li>
-<li>Tweet about your app to <a href="https://twitter.com/meteorjs">@meteorjs</a> and get featured</li>
-<li><a href="http://www.meteor.com/get-involved">Join</a> Mailing list (there is IRC channel as well)</li>
-<li>Join StackOverflow #meteor</li>
-<li>Meteor <a href="https://www.youtube.com/channel/UC3fBiJrFFMhKlsWM46AsAYw?sub_confirmation=1">Youtube channel</a> has videos from past devshops</li>
-<li><a href="http://www.meetup.com/find/?keywords=meteor">Come to a devshop</a> when you are in SFBA or find one in your area!</li>
+<li>RTFM! Docs.meteor.com - all the docs on one page, CTRL+F friendly</li>
+<li>Google First! We have plenty of answers on StackOverflow, user-group</li>
+<li>Ask people wearing Meteor T-shirts (unless they just got it for free)</li>
+<li>Tweet me @imslavko or email: slava@meteor.com</li>
 </ul></section>
       <section class="slide"><div class="author">
   <h1 class="name">Slava Kim</h1>

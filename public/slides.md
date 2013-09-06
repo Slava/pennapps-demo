@@ -25,21 +25,17 @@ Meteor is an open-source platform for building **top-quality web apps**.
 
 --
 
-### Demo
+### More
 
-- Ractive.js clocks
-- snakes.meteor.com
+- [Meteor.com][meteor]
+- Typical Meteor project is [very little][az] code
+- [Pong in 350 LOC][pong]
 
---
+![Quote from a user](/quote.png)
 
-### What is "reactivity"?
-
-We can really mean two things here:
-
-- Your views are synchronized with your data model
-- Your data is synchronized among clients
-
---
+[meteor]: https://www.meteor.com
+[az]: https://github.com/mcrider/azimuth
+[pong]: https://github.com/devonbarrett/meteor-ping-pong
 
 ### Install Meteor tool
 
@@ -53,18 +49,6 @@ for Windows.
 There is no need to have MongoDB or node.js installed.
 
 [win]: https://win.meteor.com
-
---
-
-### Meteor tool
-
-Knows how to:
-
-- `meteor` or `meteor run` - *run* your Meteor app in dev mode
-- `meteor bundle` - *create* a production bundle
-- `meteor add <package name>` - manage uni-*packages*
-- `meteor deploy myapp.meteor.com` - *deploy* your app to meteor.com free hosting!
-- And more ...
 
 --
 
@@ -85,6 +69,40 @@ can separate logic:
 --
 
 ## Start coding already!
+
+--
+
+### What is "reactivity"?
+
+We can really mean two things here:
+
+- Your views are synchronized with your data model
+- Your data is synchronized among clients
+- Full stack reactivity: data is synchronized between server-client-view
+
+--
+
+### Demo time
+
+- [Snakes][snakes]
+- [J-Fleet][jfleet]
+- [Poke*icks][pokedics] - built in 24 hours
+- Games anyone?
+
+[snakes]: http://snakes.meteor.com
+[jfleet]: http://yujiangtham.com/jfleet/
+[pokedics]: http://pokedicks.meteor.com
+
+
+--
+
+## Packages rock
+
+- Facebook connect can be added in 1 minute
+- Same with Google Accounts, Twitter, Github, etc
+- Email sending can be added in 15 secs
+- Coffeescript, Less, SCSS compilers can be added as packages
+- A lot more, check out `meteor list`
 
 --
 
@@ -166,11 +184,15 @@ Minimongo cursors and Sessions are reactive pieces of page.
 - MongoDB as a persistent storage
 - Declarative handlebars-like templates for your views
 
+- Components can be changed, community wrote drivers for RethinkDB, MySQL, jade
+  templates, angular, other things
+
 --
 
 ### There is more
 
-There is a lot more cool stuff out there!
+There is a lot more cool stuff out there! I just don't have time to explain
+everything, you got to believe me.
 
 --
 
@@ -200,18 +222,10 @@ Meteor tool with atmosphere integration.
 
 --
 
-### Get involved
+### Ask for help!
 
-- Use Meteor and build awesome apps
-- Tweet about your app to [@meteorjs][tweet] and get featured
-- [Join][get-involved] Mailing list (there is IRC channel as well)
-- Join StackOverflow #meteor
-- Meteor [Youtube channel][youtube] has videos from past devshops
-- [Come to a devshop][meetup] when you are in SFBA or find one in your area!
-
-[tweet]: https://twitter.com/meteorjs
-[get-involved]: http://www.meteor.com/get-involved
-[youtube]: https://www.youtube.com/channel/UC3fBiJrFFMhKlsWM46AsAYw?sub_confirmation=1
-[meetup]: http://www.meetup.com/find/?keywords=meteor
-
+- RTFM! Docs.meteor.com - all the docs on one page, CTRL+F friendly
+- Google First! We have plenty of answers on StackOverflow, user-group
+- Ask people wearing Meteor T-shirts (unless they just got it for free)
+- Tweet me @imslavko or email: slava@meteor.com
 
