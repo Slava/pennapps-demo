@@ -9,6 +9,10 @@ if (Meteor.isClient) {
     'dblclick': function () {
       var rest = this;
       Restaurants.update(rest._id, { $inc: { score: 5 } });
+    },
+    'click': function () {
+      var rest = this;
+      Session.set('selectedName', rest.name);
     }
   });
 }
